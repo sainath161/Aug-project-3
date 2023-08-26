@@ -40,15 +40,18 @@ nav {
     width: 16vw;
     height: 45px;
 }
+
 .glass{
     width: 3vw;
     text-align: center;
     color: #69697b;
+    cursor: pointer;
 }
 
 .cart{
     width: 3vw;
     margin-right: -7rem;
+    cursor: pointer;
 }
 .nav-btns{
     background-color: #f94a3d;
@@ -66,11 +69,11 @@ ul {
 #home{
     background: linear-gradient(45deg, #fff7f6, #fffdf0);
     height: 100vh;
-    margin-left: 1rem;
 }
 
 .home-content{
     display: inline-flex;
+    margin-left: 2rem;
 }
 
 .box{
@@ -101,6 +104,10 @@ ul {
     background-color: #f94a3d;
     padding: 15px;
 }
+.head:hover{
+    background-color: #e83b2e;
+    transition: .5s ease all;
+}
 
 .menu {
     list-style-type: none;
@@ -112,6 +119,10 @@ ul {
     text-decoration: none;
     color: #333;
     font-weight: bold;
+}
+
+.menu li a:hover{
+    color: #f94a3d;
 }
 
 /* Home Section Styles */
@@ -352,7 +363,7 @@ footer{
 }
 
 .friends-list {
-    max-height: 300px; /* Adjust the height as needed */
+    max-height: 300px;
     overflow-y: auto;
 }
 
@@ -363,13 +374,35 @@ footer{
 .friends-list:hover > .card1:hover {
     transform: scale(1.15);
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transition: .3s ease all;
     z-index: 10;
   }
   .card1{
     border: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
   }
 
   .discription1{
     font-size: 22px;
     color: #69697b;
+  }
+
+  .button{
+    font-size: 20px;
+    border-radius: 10px;
+    color: #f94a3d;
+    border-color: #f94a3d;
+    background-color: transparent;
+    padding: 10px;
+  }
+
+  .button:hover{
+    color: #f3f3f3;
+    background-color: #f94a3d;
+    transition: .5s ease all;
+  }
+
+  .text-danger{
+    color: #f94a3d !important;
+    font-weight: bold;
   }
