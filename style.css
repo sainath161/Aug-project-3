@@ -1,0 +1,375 @@
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply global styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+header {
+    background-color: #F8F8F8;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fcfbf3;
+}
+
+.search-div{
+    border: 1px solid rgb(232, 232, 232);
+    border-radius: 12px;
+    background: white;
+    color: rgb(130, 130, 130);
+    padding-left: 1.5rem;
+    margin-right: -7rem;
+}
+
+.search-div>input{
+    border: none;
+    background-color: transparent;
+    width: 16vw;
+    height: 45px;
+}
+.glass{
+    width: 3vw;
+    text-align: center;
+    color: #69697b;
+}
+
+.cart{
+    width: 3vw;
+    margin-right: -7rem;
+}
+.nav-btns{
+    background-color: #f94a3d;
+    width: 7vw;
+    border-radius: 10px;
+}
+
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home{
+    background: linear-gradient(45deg, #fff7f6, #fffdf0);
+    height: 100vh;
+    margin-left: 1rem;
+}
+
+.home-content{
+    display: inline-flex;
+}
+
+.box{
+    background-color: #fdecec;
+    border-radius: 40px;
+    font-size: 36px;
+    color: #f94a3d;
+    width: fit-content;
+}
+.dot{
+    height: 60px;
+    width: 60px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: inline-block;
+}
+.delivery{
+    max-width: 100px;
+}
+
+.para{
+    font-size: 26px;
+    color: #6b6b7c;
+}
+.head{
+    border: none;
+    border-radius: 10px;
+    background-color: #f94a3d;
+    padding: 15px;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Home Section Styles */
+
+.h1{
+    font-size: 75px;
+    font-weight: bolder;
+}
+.text{
+    color: #f94a3d;
+}
+
+/* About Section Styles */
+
+#about{
+    margin-left: 1rem;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-content{
+    margin-top: 5rem;
+}
+
+.heading{
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.paragraph{
+    font-size: 22px;
+    color: #6b6b7c;
+}
+
+
+* {
+	box-sizing: border-box;
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 90deg;
+  inherits: true;
+}
+
+@property --gradX {
+  syntax: '<percentage>';
+  initial-value: 50%;
+  inherits: true;
+}
+
+@property --gradY {
+  syntax: '<percentage>';
+  initial-value: 0%;
+  inherits: true;
+}
+
+p {
+	margin: 0;
+}
+
+.about-content1{
+    cursor: pointer;
+}
+
+.about-content1:hover {
+	--d: 2500ms;
+	--angle: 90deg;
+	--gradX: 100%;
+	--gradY: 50%;
+	--c1: #ffd005;
+	--c2: rgba(168, 239, 255, 0.1);
+}
+
+.box1 {
+	font-size: 3vw;
+	margin: max(1rem, 3vw);
+	border: 0.35rem solid #f3f3f3;
+	padding: 3vw;
+	border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
+	animation: borderRotate var(--d) linear infinite forwards;
+}
+
+
+@keyframes borderRotate {
+	100% {
+		--angle: 420deg;
+	}
+}
+
+@keyframes borderRadial {
+	20% {
+		--gradX: 100%;
+		--gradY: 50%;
+	}
+	40% {
+		--gradX: 100%;
+		--gradY: 100%;
+	}
+	60% {
+		--gradX: 50%;
+		--gradY: 100%;
+	}
+	80% {
+		--gradX: 0%;
+		--gradY: 50%;
+	}
+	100% {
+		--gradX: 50%;
+		--gradY: 0%;
+	}
+}
+
+.h2{
+    font-size: 26.5px;
+    font-weight: 780;
+    margin-top: 3rem;
+}
+
+/* Special Recipes Section Styles */
+#shop{
+    background-color: #f8f8f8;
+}
+.recipes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.menu1{
+    color: black;
+}
+
+.menu2:hover{
+    color: #f94a3d;
+    text-decoration: underline;
+}
+
+.menu3:hover{
+    color: #f94a3d;
+    text-decoration: underline;
+}
+
+.menu4:hover{
+    color: #f94a3d;
+    text-decoration: underline;
+}
+
+.menu5:hover{
+    color: #f94a3d;
+    text-decoration: underline;
+}
+
+.menu6:hover{
+    color: #f94a3d;
+    text-decoration: underline;
+}
+
+.menu7:hover{
+    color: #f94a3d;
+    text-decoration: underline;
+}
+
+.h3{
+    font-size: 19px;
+    font-weight: 780;
+}
+#food{
+    height: 90vh;
+    background-color: #ffff;
+}
+
+.container{
+    height: 50vh;
+    background-color: #f94a3d;
+    margin-top: 10rem;
+
+}
+
+.img{
+    position: relative;
+    margin-left: 5rem;
+    height: 50vh;
+    width: 75%;
+    background-color: #ed3e32;
+    border-radius: 50%/50%;
+    border: 4rem solid #e83b2e;
+}
+.mobile{
+    margin-top: -3rem;
+    margin-left: -1.3rem;
+}
+
+.hed{
+    color: white;
+    font-family: 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.par{
+    color: white;
+    font-size: 22px;
+}
+.group{
+    margin-left: 62vh;
+    margin-top: -13.5vw;
+}
+
+footer{
+    background: linear-gradient(45deg, #fff7f6, #fffdf0);
+}
+
+.container1{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.discription{
+    font-size: 18px;
+}
+
+.icon{
+    font-size: 34px;
+    cursor: pointer;
+}
+.logo{
+    cursor: pointer;
+}
+.text-muted{
+    cursor: pointer;
+}
+
+.comment{
+    border-left: 5px solid #f94a3d;
+}
+
+.friends-list {
+    max-height: 300px; /* Adjust the height as needed */
+    overflow-y: auto;
+}
+
+.friends-list:hover{
+    cursor: pointer;
+}
+
+.friends-list:hover > .card1:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    z-index: 10;
+  }
+  .card1{
+    border: none;
+  }
+
+  .discription1{
+    font-size: 22px;
+    color: #69697b;
+  }
