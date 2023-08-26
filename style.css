@@ -67,6 +67,9 @@ ul {
 }
 
 #home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: linear-gradient(45deg, #fff7f6, #fffdf0);
     height: 100vh;
 }
@@ -143,6 +146,7 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 80vh;
 }
 
 .about-content{
@@ -257,6 +261,7 @@ p {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+    height: 100vh;
 }
 .menu1{
     color: black;
@@ -299,6 +304,8 @@ p {
 #food{
     height: 90vh;
     background-color: #ffff;
+    display: flex;
+    margin-top: -1rem;
 }
 
 .container{
