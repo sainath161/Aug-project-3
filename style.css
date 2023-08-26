@@ -247,6 +247,10 @@ p {
 /* Special Recipes Section Styles */
 #shop{
     background-color: #f8f8f8;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .recipes {
     display: flex;
@@ -363,7 +367,7 @@ footer{
 }
 
 .friends-list {
-    max-height: 300px;
+    max-height: 400px;
     overflow-y: auto;
 }
 
