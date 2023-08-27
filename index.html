@@ -2,357 +2,421 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
-    <title>AccioJob Food Delivery</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fdelivery</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body {
+      font-family: poppins;
+    }
+  </style>
 </head>
 
 <body>
-    <!-- Navbar and Header -->
-    <main>
-        <header>
-            <nav class="d-flex justify-content-between align-items-center">
-                <div class="logo">
-                    <img src="./logo.svg" alt="AccioJob Logo">
-                </div>
-                <ul class="menu">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#shop">Shop</a></li>
-                    <li><a href="#food">Food</a></li>
-                    <li><a href="#recipes">Recipes</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <div class="search-div">
-                    <input type="text" placeholder="Search your item" class="search-input" />
-                    <i class="fa-solid fa-magnifying-glass glass"></i>
-                </div>
-                <img src="./cart.svg" class="cart" alt="cart">
-                <button class="nav-btns btn btn-danger rounded-lg my-cart">
-                    Sign in
-                </button>
-            </nav>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-center align-items-center">
+      <div class="container my-navbar">
+        <a class="navbar-brand" href="#"><img src="./fdelivery-logo.svg" alt="fdelivery-logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto ">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Feature-section">About</a>
+            </li>
 
-        </header>
+            <li class="nav-item">
+              <a class="nav-link" href="#catagory-section">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#food">Food</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonial-section">Recipes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <div class="input-search d-flex">
+            <div class="search d-inline-block">
+              <form class="d-inline-block">
+                <input class="form-control input-item" type="search" placeholder="Search your item" aria-label="Search"
+                  size="12" />
+              </form>
+              <i class="fa-solid fa-magnifying-glass p-2" style="color: #182030; cursor: pointer;"></i>
+            </div> <img src="./Icon.svg" style="cursor: pointer;" alt="cart-icon">
+            <button class="my-btn d-inline-block" type="submit">Sign In</button>
 
-        <!-- Home Section -->
-        <section id="home">
-            <div class="row">
-                <div class="home-content col-6 justify-content-center align-items-center">
-                    <div class="row">
-                        <span class="box p-2">More than faster <img src="./french.svg" alt="french" class="dot"></span>
-                        <div class="header-content d-flex justify-content-center">
-                            <h1 class="h1">Get your cuisine delivered right to <span class="text">your door</span></h1>
-                        </div>
-                        <p class="d-flex justify-content-center para">Food that is delivered at the right time. The
-                            trendy food delivery partner. Good food is what we deliver. Your hunger companion.</p>
-                        <div><br>
-                            <h2><button class="head text-white border-rounded-4">Explore Food</button></h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-5">
-                    <img src="./delivary.svg" style="width: 40rem;" class="delivary" alt="delivary">
-                </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="d-flex justify-content-center flex-column align-items-center">
+    <!-- hero-section -->
+    <section id="hero-section" class="hero-section d-flex justify-content-center align-items-center">
+      <div class="main-section d-flex justify-content-center align-items-center">
+        <div class="intro">
+          <div class="badge"><span class="box p-2">More than faster <img src="./french.svg" alt="french"
+                class="dot"></span></div>
+          <h1 class="hello">Get your cuisine delivered right to <br><span class="highlighter">your door</span></h1>
+          <p>Food that is delivered at the right time. The trendy food delivery partner. Good food is what we deliver.
+            Your hunger companion.</p>
+          <button class="head text-white fs-5 border-rounded-4">Explore Food</button>
+        </div>
+        <div class="intro-image">
+          <img src="./Frame.svg" alt="intro-image">
+        </div>
+      </div>
+    </section>
+
+    <!-- feature section -->
+    <section id="Feature-section" class="features d-flex justify-content-center align-items-center">
+      <div class="my-card">
+        <div>
+          <h2>Why we are Best in our Town</h2>
+        </div>
+        <p>whole grains and low-fat dairy can help to reduce your risk of heart disease by maintaining blood pressure
+          and</p>
+      </div>
+      <div class="my-card">
+        <div class="wrapper">
+          <div class="box1">
+            <img src="./Group 1000002745.svg" alt="chicken">
+            <h4 class="fw-bold">Choose your favorite food</h4>
+          </div>
+        </div>
+      </div>
+      <div class="my-card">
+        <div class="wrapper">
+          <div class="box1">
+            <img src="./Group 1000002740.svg" alt="chicken">
+            <h4 class="fw-bold">Get delivery at your door step</h4>
+          </div>
+        </div>
+      </div>
+      <div class="my-card">
+        <div class="wrapper">
+          <div class="box1">
+            <img src="./Group 1000002741.svg" alt="chicken">
+            <h4 class="fw-bold">We have 400+ Review On our app</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- category section -->
+    <section id="catagory-section"
+      class="catagory-section d-flex justify-content-center align-items-center flex-column">
+      <h2 class="fw-bold">Try Our Special Recipes</h2>
+      <nav aria-label="d-flex justify-content-center align-items-center">
+        <ul class="pagination pagination-sm" style="background: none;">
+          <li class="page-item" style="background: white;"><a class="page-link" href="#">Fast Food</a></li>
+          <li class="page-item"><a class="page-link" href="#">Rice Menu</a></li>
+          <li class="page-item"><a class="page-link" href="#">Dessert</a></li>
+          <li class="page-item"><a class="page-link" href="#">Coffee</a></li>
+          <li class="page-item"><a class="page-link" href="#">Pizza</a></li>
+          <li class="page-item"><a class="page-link" href="#">See All Products</a></li>
+        </ul>
+      </nav>
+      <div class="catagory-section-row">
+        <div class="my-list p-3">
+          <div class="card my-card p-3 d-inline-block flex-column justify-content-center align-items-center">
+            <img src="./Frame1.svg" style="margin-left: 3rem;" alt="Frame1">
+            <div class="product-time">
+              <img src="./stars.svg" style="margin-left: 3rem;" alt="stars">
             </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about">
-            <div class="row">
-                <div class="about-content col-3 justify-content-center align-items-center">
-                    <h2 class="heading">Why we are Best in our Town</h2>
-                    <p class="paragraph">Whole grains and low-fat dairy can help to reduce your risk of heart disease by
-                        maintaining blood pressure and improving cholesterol profiles.</p>
-                </div>
-                <div class="about-content1 col-3 justify-content-center align-items-center">
-                    <div class="wrapper">
-                        <div class="box1">
-                            <img src="./piece.svg" alt="chicken">
-                            <h1 class="h2">Choose your favorite food</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-content1 col-3 justify-content-center align-items-center">
-                    <div class="wrapper">
-                        <div class="box1">
-                            <img src="./boy.svg" alt="chicken">
-                            <h1 class="h2">Get delivery at your door step</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-content1 col-3 justify-content-center align-items-center">
-                    <div class="wrapper">
-                        <div class="box1">
-                            <img src="./order.svg" alt="chicken">
-                            <h1 class="h2">We have 400+ Review On our app</h1>
-                        </div>
-                    </div>
-                </div>
+            <div class="product-title fw-bold" style="text-align: center;">Crispy Fried Chicken</div>
+            <div class="product-price" style="text-align: center;">Price <span class="colored-price">$ 13.00</span>
             </div>
-        </section>
-
-        <section id="recipes">
-            <h2 style="text-align: center; font-weight: 700;">Try Our Special Recipes</h2>
-            <ul class="menu p-5 border-bottom menu1">
-                <li class="menu1 menu2"><a href="#">Fast Food</a></li>
-                <li class="menu1 menu3"><a href="#">Rice Menu</a></li>
-                <li class="menu1 menu4"><a href="#">Desserts</a></li>
-                <li class="menu1 menu5"><a href="#">Coffee</a></li>
-                <li class="menu1 menu6"><a href="#">Pizza</a></li>
-                <li class="menu1 menu7"><a href="#">See All Product</a></li>
-            </ul>
-            <div class="d-flex">
-                <div class="about-content1" style="width: 25rem; text-align: center;">
-                    <div class="wrapper">
-                        <div class="box1">
-                            <img style="margin-top: -1rem;" src="./kfc.svg" alt="kfc">
-                            <img src="./stars.svg" alt="star">
-                            <h1 class="h3">Crispy fried chicken</h1>
-                            <p class="fs-5">Price <span class="text-danger">$13.00</span></p>
-                            <button class="button">Add To Cart+</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-content1" style="width: 25rem; text-align: center;">
-                    <div class="wrapper">
-                        <div class="box1">
-                            <img style="margin-top: -1rem;" src="./burger.svg" alt="burger">
-                            <img src="./stars.svg" alt="star">
-                            <h1 class="h3">Burger Patty Recipe</h1>
-                            <p class="fs-5">Price <span class="text-danger">$15.00</span></p>
-                            <button class="button">Add To Cart+</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-content1" style="width: 25rem; text-align: center;">
-                    <div class="wrapper">
-                        <div class="box1">
-                            <img style="margin-top: -5rem;" style="margin-top: -5rem;" src="./chop.svg" alt="chop">
-                            <img src="./stars.svg" alt="star">
-                            <h1 class="h3">Must-Try Dishes</h1>
-                            <p class="fs-5">Price <span class="text-danger">$12.00</span></p>
-                            <button class="button">Add To Cart+</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-content1" style="width: 25rem; text-align: center;">
-                    <div class="wrapper">
-                        <div class="box1">
-                            <img style="margin-top: -2rem;" src="./french1.svg" alt="french">
-                            <img src="./stars.svg" alt="star">
-                            <h1 class="h3">Total French fries</h1>
-                            <p class="fs-5">Price <span class="text-danger">$17.00</span></p>
-                            <button class="button">Add To Cart+</button>
-                        </div>
-                    </div>
-                </div>
+            <br><button class="btn btn-outline-danger" style="margin-left: 3rem;">Add To Cart+</button>
+          </div>
+          <div class="card my-card p-3 d-inline-block flex-column justify-content-center align-items-center">
+            <img src="./Frame2.svg" style="margin-left: 3rem;" alt="Frame1">
+            <div class="product-time">
+              <img src="./stars.svg" style="margin-left: 3rem;" alt="stars">
             </div>
-        </section>
-
-        <section id="shop">
-            <div class="row">
-                <div class="col-5">
-                    <div class="friends-list">
-                        <div class="card card1 mb-4 border rounded" style="width: 50%; margin-left: 10rem;">
-                            <div class="row no-gutters d-flex justify-content-center align-items-center">
-                                <div class="col-md-4" style="width: 75px;">
-                                    <img src="./desoza.svg" alt="Friend 1" class="card-img">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Rosele Desoza</h5>
-                                        <p class="card-text">Markting Coordinator</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card card1 mb-4 border rounded" style="width: 50%; margin-left: 10rem;">
-                            <div class="row no-gutters d-flex justify-content-center align-items-center">
-                                <div class="col-md-4" style="width: 75px;">
-                                    <img src="./marvin.svg" alt="Friend 1" class="card-img">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Marvin McKinney</h5>
-                                        <p class="card-text">Web Designer</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card card1 mb-4 border rounded" style="width: 50%; margin-left: 10rem;">
-                            <div class="row no-gutters d-flex justify-content-center align-items-center">
-                                <div class="col-md-4" style="width: 75px;">
-                                    <img src="./guy.svg" alt="Friend 1" class="card-img">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Guy Hawkins</h5>
-                                        <p class="card-text">President of sales</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card card1 mb-4 border rounded" style="width: 50%; margin-left: 10rem;">
-                            <div class="row no-gutters d-flex justify-content-center align-items-center">
-                                <div class="col-md-4" style="width: 75px;">
-                                    <img src="./murphy.svg" alt="Friend 1" class="card-img">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Kathryn Murphy</h5>
-                                        <p class="card-text">Markting Coordinator</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card card1 mb-4 border rounded" style="width: 50%; margin-left: 10rem;">
-                            <div class="row no-gutters d-flex justify-content-center align-items-center">
-                                <div class="col-md-4" style="width: 75px;">
-                                    <img src="./desoza.svg" alt="Friend 1" class="card-img">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Rosele Desoza</h5>
-                                        <p class="card-text">Markting Coordinator</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card card1 mb-4 border rounded" style="width: 50%; margin-left: 10rem;">
-                            <div class="row no-gutters d-flex justify-content-center align-items-center">
-                                <div class="col-md-4" style="width: 75px;">
-                                    <img src="./marvin.svg" alt="Friend 1" class="card-img">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Marvin McKinney</h5>
-                                        <p class="card-text">Web Designer</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card card1 mb-4 border rounded" style="width: 50%; margin-left: 10rem;">
-                            <div class="row no-gutters d-flex justify-content-center align-items-center">
-                                <div class="col-md-4" style="width: 75px;">
-                                    <img src="./guy.svg" alt="Friend 1" class="card-img">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Guy Hawkins</h5>
-                                        <p class="card-text">President of sales</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card card1 mb-4 border rounded" style="width: 50%; margin-left: 10rem;">
-                            <div class="row no-gutters d-flex justify-content-center align-items-center">
-                                <div class="col-md-4" style="width: 75px;">
-                                    <img src="./murphy.svg" alt="Friend 1" class="card-img">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Kathryn Murphy</h5>
-                                        <p class="card-text">Markting Coordinator</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-7">
-                    <h1>What our Coustomers <br> <span class="text-danger">are saying</span></h1><br><br>
-                    <div class="comment p-2 border-bottom">
-                        <h4 class="fs-2">Rosele Desoza</h4>
-                        <p class="d-flex justify-content-between fs-4">Marketing Coordinator
-                            <img src="./stars.svg" alt="star">
-                        </p>
-                    </div>
-                    <div class="discription1">
-                        <p>"Having good restaurant reviews is crucial these days. It is not just making our decision to
-                            pick one easier, it is also helping the restaurantto be more successful. You can quickly
-                            copy and paste these good restaurant review examples, publish them on Facebook"</p>
-                    </div>
-                </div>
+            <div class="product-title fw-bold" style="text-align: center;">Burger Patty Recipe</div>
+            <div class="product-price" style="text-align: center;">Price <span class="colored-price">$ 13.00</span>
             </div>
-        </section>
-
-        <section id="food">
-            <div class="container card">
-                <div class="row">
-                    <div class="col-md-5 col-sm-12">
-                        <div class="img">
-                            <img src="./Mobile.svg" class="mobile" width="120%" height="auto" alt="burger">
-                        </div>
-                    </div>
-                    <div class="col-md-5 col-sm-12 text-align-center mt-5">
-                        <h1 class="hed">Never Feel Hungry!</h1>
-                        <h1 class="hed">Download Our Mobile App</h1>
-                        <h1 class="hed">Order Delicious Food</h1>
-                        <p class="par">Online ordering has enabled many restaurants to manage their peak business hours
-                            very effectively.</p><br>
-                        <a href="#"><img src="./apps.svg" alt="apps"></a>
-                        <img src="./Group.svg" class="group" alt="group">
-                    </div>
-
-                </div>
+            <br><button class="btn btn-outline-danger" style="margin-left: 3rem;">Add To Cart+</button>
+          </div>
+          <div class="card my-card p-3 d-inline-block flex-column justify-content-center align-items-center">
+            <img src="./Frame3.svg" style="margin-left: 3rem;" alt="Frame1">
+            <div class="product-time">
+              <img src="./stars.svg" style="margin-left: 3rem;" alt="stars">
             </div>
-        </section>
-
-        <!-- Footer -->
-        <footer id="contact">
-            <div class="container1">
-                <div class="row">
-                    <div class="col-4">
-                        <img src="./logo.svg" class="logo" alt="logo">
-                        <p class="discription">Retail food service is a courier service in which a restaurant, store, or
-                            independent
-                            food-delivery</p><br><br>
-                        <i class="fa-brands fa-square-facebook icon"></i>
-                        <i class="fa-brands fa-square-twitter icon"></i>
-                        <i class="fa-brands fa-linkedin icon"></i>
-                    </div>
-                    <div class="col-2">
-                        <h1>Company</h1><br><br>
-                        <span class="text-muted">About us<br><br>Blog<br><br>All Products<br><br>Locations Map</span>
-                    </div>
-                    <div class="col-2">
-                        <h1>Services</h1><br><br>
-                        <span class="text-muted">Order Tracking<br><br>Wish List<br><br>My account<br><br>Terms &
-                            Conditions</span>
-                    </div>
-                    <div class="col-2">
-                        <h1>Support</h1><br><br>
-                        <span class="text-muted">FAQ'S<br><br>Policy<br><br>Business<br><br>Support Carrer</span>
-                    </div>
-                    <div class="col-2">
-                        <h1>Contact Us</h1><br><br>
-                        <span class="text-muted">WhatsApp<br><br>Support 24<br><br>Quick Chat</span>
-                    </div>
-                </div>
+            <div class="product-title fw-bold" style="text-align: center;">Must-Try Dishes</div>
+            <div class="product-price" style="text-align: center;">Price <span class="colored-price">$ 13.00</span>
             </div>
-        </footer>
-    </main>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-        crossorigin="anonymous"></script>
+            <br><button class="btn btn-outline-danger" style="margin-left: 3rem;">Add To Cart+</button>
+          </div>
+          <div class="card my-card p-3 d-inline-block flex-column justify-content-center align-items-center">
+            <img src="./Frame4.svg" style="margin-left: 3rem;" alt="Frame1">
+            <div class="product-time">
+              <img src="./stars.svg" style="margin-left: 3rem;" alt="stars">
+            </div>
+            <div class="product-title fw-bold" style="text-align: center;">Tasty French Fries</div>
+            <div class="product-price" style="text-align: center;">Price <span class="colored-price">$ 13.00</span>
+            </div>
+            <br><button class="btn btn-outline-danger" style="margin-left: 3rem;">Add To Cart+</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- testimonial section -->
+    <section id="testimonial-section" class="testimonial-section d-flex justify-content-center align-items-center">
+      <div class="content d-flex justify-content-center align-items-center ">
+        <div class="my-container d-flex justify-content-center flex-column align-items-center">
+          <div class="card person d-flex  align-items-center flex-row">
+            <div class="d-inline-block"><img src="./Ellipse 2518.svg" alt="profile-pic"></div>
+            <div class="profile d-inline-block">
+              <h6 class="fw-bold">Rosele Desoza</h6>
+              <h6 class="fw-light profile-deg">Marketing Coordinator</h6>
+            </div>
+          </div>
+          <div class="card person d-flex  align-items-center flex-row">
+            <div class="d-inline-block"><img src="./marvin.svg" alt="profile-pic"></div>
+            <div class="profile d-inline-block">
+              <h6 class="fw-bold">Marvin McKinney</h6>
+              <h6 class="fw-light profile-deg">Web Designer</h6>
+            </div>
+          </div>
+          <div class="card person d-flex  align-items-center flex-row">
+            <div class="d-inline-block"><img src="./guy.svg" alt="profile-pic"></div>
+            <div class="profile d-inline-block">
+              <h6 class="fw-bold">Guy Hawkins</h6>
+              <h6 class="fw-light profile-deg">President of sales</h6>
+            </div>
+          </div>
+          <div class="card person d-flex  align-items-center flex-row">
+            <div class="d-inline-block"><img src="./murphy.svg" alt="profile-pic"></div>
+            <div class="profile d-inline-block">
+              <h6 class="fw-bold">Kathryn Murphy</h6>
+              <h6 class="fw-light profile-deg">Marketing Coordinator</h6>
+            </div>
+          </div>
+          <div class="card person d-flex  align-items-center flex-row">
+            <div class="d-inline-block"><img src="./Ellipse 2518.svg" alt="profile-pic"></div>
+            <div class="profile d-inline-block">
+              <h6 class="fw-bold">Rosele Desoza</h6>
+              <h6 class="fw-light profile-deg">Marketing Coordinator</h6>
+            </div>
+          </div>
+          <div class="card person d-flex  align-items-center flex-row">
+            <div class="d-inline-block"><img src="./marvin.svg" alt="profile-pic"></div>
+            <div class="profile d-inline-block">
+              <h6 class="fw-bold">Marvin McKinney</h6>
+              <h6 class="fw-light profile-deg">Web Designer</h6>
+            </div>
+          </div>
+          <div class="card person d-flex  align-items-center flex-row">
+            <div class="d-inline-block"><img src="./guy.svg" alt="profile-pic"></div>
+            <div class="profile d-inline-block">
+              <h6 class="fw-bold">Guy Hawkins</h6>
+              <h6 class="fw-light profile-deg">President of sales</h6>
+            </div>
+          </div>
+          <div class="card person d-flex  align-items-center flex-row">
+            <div class="d-inline-block"><img src="./murphy.svg" alt="profile-pic"></div>
+            <div class="profile d-inline-block">
+              <h6 class="fw-bold">Kathryn Murphy</h6>
+              <h6 class="fw-light profile-deg">Marketing Coordinator</h6>
+            </div>
+          </div>
+          <div class="card person d-flex  align-items-center flex-row">
+            <div class="d-inline-block"><img src="./Ellipse 2518.svg" alt="profile-pic"></div>
+            <div class="profile d-inline-block">
+              <h6 class="fw-bold">Rosele Desoza</h6>
+              <h6 class="fw-light profile-deg">Marketing Coordinator</h6>
+            </div>
+          </div>
+          <div class="card person d-flex  align-items-center flex-row">
+            <div class="d-inline-block"><img src="./marvin.svg" alt="profile-pic"></div>
+            <div class="profile d-inline-block">
+              <h6 class="fw-bold">Marvin McKinney</h6>
+              <h6 class="fw-light profile-deg">Web Designer</h6>
+            </div>
+          </div>
+          <div class="card person d-flex  align-items-center flex-row">
+            <div class="d-inline-block"><img src="./guy.svg" alt="profile-pic"></div>
+            <div class="profile d-inline-block">
+              <h6 class="fw-bold">Guy Hawkins</h6>
+              <h6 class="fw-light profile-deg">President of sales</h6>
+            </div>
+          </div>
+          <div class="card person d-flex  align-items-center flex-row">
+            <div class="d-inline-block"><img src="./murphy.svg" alt="profile-pic"></div>
+            <div class="profile d-inline-block">
+              <h6 class="fw-bold">Kathryn Murphy</h6>
+              <h6 class="fw-light profile-deg">Marketing Coordinator</h6>
+            </div>
+          </div>
+          <div class="card person d-flex  align-items-center flex-row">
+            <div class="d-inline-block"><img src="./Ellipse 2518.svg" alt="profile-pic"></div>
+            <div class="profile d-inline-block">
+              <h6 class="fw-bold">Rosele Desoza</h6>
+              <h6 class="fw-light profile-deg">Marketing Coordinator</h6>
+            </div>
+          </div>
+          <div class="card person d-flex  align-items-center flex-row">
+            <div class="d-inline-block"><img src="./marvin.svg" alt="profile-pic"></div>
+            <div class="profile d-inline-block">
+              <h6 class="fw-bold">Marvin McKinney</h6>
+              <h6 class="fw-light profile-deg">Web Designer</h6>
+            </div>
+          </div>
+          <div class="card person d-flex  align-items-center flex-row">
+            <div class="d-inline-block"><img src="./guy.svg" alt="profile-pic"></div>
+            <div class="profile d-inline-block">
+              <h6 class="fw-bold">Guy Hawkins</h6>
+              <h6 class="fw-light profile-deg">President of sales</h6>
+            </div>
+          </div>
+          <div class="card person d-flex  align-items-center flex-row">
+            <div class="d-inline-block"><img src="./murphy.svg" alt="profile-pic"></div>
+            <div class="profile d-inline-block">
+              <h6 class="fw-bold">Kathryn Murphy</h6>
+              <h6 class="fw-light profile-deg">Marketing Coordinator</h6>
+            </div>
+          </div>
+          <div class="card person d-flex  align-items-center flex-row">
+            <div class="d-inline-block"><img src="./Ellipse 2518.svg" alt="profile-pic"></div>
+            <div class="profile d-inline-block">
+              <h6 class="fw-bold">Rosele Desoza</h6>
+              <h6 class="fw-light profile-deg">Marketing Coordinator</h6>
+            </div>
+          </div>
+          <div class="card person d-flex  align-items-center flex-row">
+            <div class="d-inline-block"><img src="./marvin.svg" alt="profile-pic"></div>
+            <div class="profile d-inline-block">
+              <h6 class="fw-bold">Marvin McKinney</h6>
+              <h6 class="fw-light profile-deg">Web Designer</h6>
+            </div>
+          </div>
+          <div class="card person d-flex  align-items-center flex-row">
+            <div class="d-inline-block"><img src="./guy.svg" alt="profile-pic"></div>
+            <div class="profile d-inline-block">
+              <h6 class="fw-bold">Guy Hawkins</h6>
+              <h6 class="fw-light profile-deg">President of sales</h6>
+            </div>
+          </div>
+          <div class="card person d-flex  align-items-center flex-row">
+            <div class="d-inline-block"><img src="./murphy.svg" alt="profile-pic"></div>
+            <div class="profile d-inline-block">
+              <h6 class="fw-bold">Kathryn Murphy</h6>
+              <h6 class="fw-light profile-deg">Marketing Coordinator</h6>
+            </div>
+          </div>
+        </div>
+        <div class="my-container-description">
+          <h1>What our Customers <span class="colored-price"><br>are saying </span></h1>
+          <div class="comment">
+            <h4 class="fw-bold">Rosele Desoza</h4>
+            <p>Marketing Coordinator</p>
+            <span class="float-end">
+              <img src="./stars.svg" alt="star">
+            </span>
+          </div>
+          <br>
+          <div>
+            <p class="fw-light">“Having good restaurant reviews is crucial these days. It is not just making our
+              decision to pick one easier, it is also helping the restaurant be more successful. You can quickly copy
+              and paste these good restaurant review examples, publish them on Facebook”</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Picture Section -->
+
+    <section id="food" class="picture-section d-flex justify-content-center align-items-center">
+      <div class="pic d-flex justify-content-center align-items-center">
+        <img src="./Group 1000002779.svg" alt="">
+      </div>
+    </section>
+  </main>
+  <footer id="contact" class="d-flex justify-content-center align-items-center">
+    <div class="footer-item d-flex justify-content-around align-items-center">
+      <div class="first">
+        <img src="./fdelivery-logo.svg" alt="" />
+
+        <p><br>Retail food delivery is a courier service in which a restaurant, store, or independent food-delivery</p>
+        <div class="d-flex">
+          <div class="icon-set d-flex justify-content-center align-items-center">
+            <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
+          </div>
+          <div class="icon-set d-flex justify-content-center align-items-center">
+            <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+          </div>
+          <div class="icon-set d-flex justify-content-center align-items-center">
+            <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
+          </div>
+        </div>
+      </div>
+      <div class="second">
+        <table>
+          <thead>
+            <th>Company</th>
+            <th>Services</th>
+            <th>Support</th>
+            <th>Contact</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td><br></td>
+            </tr>
+            <tr>
+              <td>About US</td>
+              <td>Order Tracking</td>
+              <td>FAQ</td>
+              <td>WhatsApp</td>
+            </tr>
+            <tr>
+              <td>Blog</td>
+              <td>Wish List</td>
+              <td>Policy</td>
+              <td>Support 24</td>
+            </tr>
+            <tr>
+              <td>All Products</td>
+              <td>My account</td>
+              <td>Business</td>
+              <td>Quick Chat</td>
+            </tr>
+            <tr>
+              <td>Location Map</td>
+              <td>Terms & conditions</td>
+              <td>Support Carrer</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
 </body>
-
 
 </html>
