@@ -23,53 +23,69 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-center align-items-center">
-      <div class="container my-navbar">
-        <a class="navbar-brand" href="#"><img src="./fdelivery-logo.svg" alt="fdelivery-logo"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav m-auto ">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Feature-section">About</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#catagory-section">Shop</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#food">Food</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#testimonial-section">Recipes</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
-          <div class="input-search d-flex">
-            <div class="search d-inline-block">
-              <form class="d-inline-block">
-                <input class="form-control input-item" type="search" placeholder="Search your item" aria-label="Search"
-                  size="12" />
-              </form>
-              <i class="fa-solid fa-magnifying-glass p-2" style="color: #182030; cursor: pointer;"></i>
-            </div> <img src="./Icon.svg" style="cursor: pointer;" alt="cart-icon">
-            <button class="my-btn d-inline-block" type="submit">Sign In</button>
-
+    <div class="px-4">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./fdelivery-logo.svg" alt="brang Image" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item my-nav-items">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item my-nav-items">
+                <a class="nav-link" href="#about">About Us</a>
+              </li>
+              <li class="nav-item my-nav-items">
+                <a class="nav-link" href="#food">Shop</a>
+              </li>
+              <li class="nav-item my-nav-items">
+                <a class="nav-link" href="#shop">Food</a>
+              </li>
+              <li class="nav-item my-nav-items">
+                <a class="nav-link" href="#recipes">Recipies</a>
+              </li>
+              <li class="nav-item my-nav-items">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+            <form class="d-flex align-items-center">
+              <div class="nav-search-div">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <div class="vertical-line-1"></div>
+                <i
+                  class="fa-solid fa-magnifying-glass"
+                  style="color: #69697b"
+                ></i>
+              </div>
+              <img src="./Icon.svg" alt="bag icon" />
+              <button class="my-btn-1" type="submit">Sign In</button>
+            </form>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
   </header>
   <main class="d-flex justify-content-center flex-column align-items-center">
     <!-- hero-section -->
-    <section id="hero-section" class="hero-section d-flex justify-content-center align-items-center">
+    <section id="home" class="hero-section d-flex justify-content-center align-items-center">
       <div class="main-section d-flex justify-content-center align-items-center">
         <div class="intro">
           <div class="badge"><span class="box p-2">More than faster <img src="./french.svg" alt="french"
@@ -86,7 +102,7 @@
     </section>
 
     <!-- feature section -->
-    <section id="Feature-section" class="features d-flex justify-content-center align-items-center">
+    <section id="shop" class="features d-flex justify-content-center align-items-center">
       <div class="my-card">
         <div>
           <h2>Why we are Best in our Town</h2>
@@ -121,7 +137,7 @@
     </section>
 
     <!-- category section -->
-    <section id="catagory-section"
+    <section id="recipes"
       class="catagory-section d-flex justify-content-center align-items-center flex-column">
       <h2 class="fw-bold">Try Our Special Recipes</h2>
       <nav aria-label="d-flex justify-content-center align-items-center">
@@ -181,7 +197,7 @@
     </section>
 
     <!-- testimonial section -->
-    <section id="testimonial-section" class="testimonial-section d-flex justify-content-center align-items-center">
+    <section id="about" class="testimonial-section d-flex justify-content-center align-items-center">
       <div class="content d-flex justify-content-center align-items-center ">
         <div class="my-container d-flex justify-content-center flex-column align-items-center">
           <div class="card person d-flex  align-items-center flex-row">
